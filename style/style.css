@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+@font-face {
+  font-family: destaque;
+  src: url("../fonts/fonte-destaque.ttf");
+}
+
+/*Paleta de cores*/
+:root {
+  --cor1: #ccd9d7;
+  --cor2: #066355;
+  --cor3: #043d35;
+  --cor4: #032026;
+  --cor5: #424242;
+}
+
+/*Configurações Globais*/
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #00000070;
+  color: #ffffff;
+}
+
+:target {
+  scroll-margin-top: 40px;
+}
+
+/*Cabeçalho*/
+header {
+  background-color: var(--cor3);
+  font-family: destaque;
+  height: 100px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*Menu*/
+nav {
+  background-color: var(--cor2);
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+}
+
+nav > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffffa1;
+  padding: 10px;
+}
+
+nav > a:hover {
+  color: white;
+}
+
+.img-menu {
+  vertical-align: bottom;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: var(--cor4);
+}
+
+main {
+  background-color: var(--cor1);
+  width: 800px;
+  height: 1211px;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.h2 {
+  background-color: var(--cor2);
+  font-family: "Varela Round", sans-serif;
+  color: #ffffff;
+  padding: 5px 5px 5px 10px;
+  font-size: 13pt;
+}
+
+.box {
+  background: #ffffff;
+  border: 1px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box4 box5 box6"
+    "box7 box7 box7 box7";
+}
+
+.box1 {
+  grid-area: box1;
+  height: 300px;
+  text-align: justify;
+  font-size: 12pt;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box2 {
+  grid-area: box2;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box3 {
+  grid-area: box3;
+  text-align: justify;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.box4 {
+  grid-area: box4;
+  text-align: justify;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.box5 {
+  grid-area: box5;
+  text-align: justify;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.box6 {
+  grid-area: box6;
+  text-align: justify;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.box7 {
+  grid-area: box7;
+  height: 350px;
+  list-style-position: inside;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.img {
+  width: 185px;
+  height: 185px;
+  margin-bottom: 5px;
+}
+
+.nomes {
+  background-color: var(--cor2);
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid black;
+  color: #ffffff;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.list {
+  list-style-image: url("../img/link.png");
+}
+
+.list a {
+  text-decoration: none;
+  color: #000000a1;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.list a:hover {
+  color: #000000;
+}
+
+/*Desafios*/
+#main-desafios {
+  height: 1459px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "box01 check"
+    "box02 check"
+    "box03 check"
+    "box04 check"
+    "box05 check";
+}
+
+.box01 {
+  grid-area: box01;
+  height: 250px;
+  text-align: justify;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box02 {
+  grid-area: box02;
+  height: 250px;
+  text-align: justify;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box03 {
+  grid-area: box03;
+  height: 250px;
+  text-align: justify;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box04 {
+  grid-area: box04;
+  height: 250px;
+  text-align: justify;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.box05 {
+  grid-area: box05;
+  height: 250px;
+  text-align: justify;
+  margin-top: 20px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.check {
+  grid-area: check;
+  margin-top: 20px;
+}
+
+#img-check {
+  margin-top: 88px;
+  margin-left: 157px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cor3);
+  font-weight: bold;
+}
+
+.link::after {
+  content: "🔗";
+}
+
+.padding {
+  padding: 10px;
+}
+
+/*Contato*/
+#mapa {
+  display: block;
+  margin: auto;
+}
+
+#main-contato {
+  height: 310px;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "contato qrcode";
+}
+
+.contato {
+  grid-area: contato;
+  height: 289px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.contato-list {
+  list-style-type: none;
+}
+
+.qrcode {
+  grid-area: qrcode;
+  height: 289px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.qrcode > img {
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+footer {
+  background-color: var(--cor5);
+  text-align: center;
+  font-size: 11pt;
+  color: #ffffff;
+  height: 80px;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
